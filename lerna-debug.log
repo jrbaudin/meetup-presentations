@@ -1,0 +1,22 @@
+0 silly input [ '/Users/joel/dev/meetup/graphql-2018-06-27/server-side-graphql' ]
+1 silly flags { _: [ 'import' ],
+1 silly flags   'reject-cycles': false,
+1 silly flags   rejectCycles: false,
+1 silly flags   pathToRepo: '/Users/joel/dev/meetup/graphql-2018-06-27/server-side-graphql' }
+2 verbose rootPath /Users/joel/dev/meetup/presentations
+3 info version 2.10.2
+4 silly isInitialized
+5 silly isInitialized true
+6 silly existsSync /Users/joel/dev/meetup/presentations/VERSION
+7 silly initialize attempt
+8 silly statSync /Users/joel/dev/meetup/graphql-2018-06-27/server-side-graphql
+9 silly getWorkspaceRoot
+10 verbose getWorkspaceRoot /Users/joel/dev/meetup/presentations
+11 silly existsSync /Users/joel/dev/meetup/presentations/packages/server-side-graphql
+12 error initialize caught error
+13 error Error: fatal: your current branch 'master' does not have any commits yet
+13 error
+13 error     at Function.module.exports.sync (/usr/local/lib/node_modules/lerna/node_modules/execa/index.js:303:26)
+13 error     at Function.execSync (/usr/local/lib/node_modules/lerna/lib/ChildProcessUtilities.js:59:30)
+13 error     at ImportCommand.externalExecSync (/usr/local/lib/node_modules/lerna/lib/commands/ImportCommand.js:176:46)
+13 error     at ImportCommand.initialize (/usr/local/lib/node_modules/lerna/lib/commands/ImportCommand.js:141:27)
