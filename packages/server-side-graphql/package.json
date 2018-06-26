@@ -1,7 +1,7 @@
 {
-  "name": "spectacle-boilerplate",
-  "version": "1.0.1",
-  "description": "ReactJS Powered Presentation Framework",
+  "name": "server-side-graphql",
+  "version": "1.0.0",
+  "description": "An introduction to running a graphql server using Apollo",
   "main": "lib/index.js",
   "scripts": {
     "clean": "rimraf dist",
@@ -11,7 +11,11 @@
     "export": "spectacle-renderer --delay 3000",
     "start": "cross-env NODE_ENV=development node server.js"
   },
-  "author": "",
+  "author": {
+    "name": "Joel Baudin",
+    "email": "joel.baudin88@gmail.com",
+    "url": "https://joelbaudin.com"
+  },
   "license": "MIT",
   "dependencies": {
     "normalize.css": "7.0.0",
