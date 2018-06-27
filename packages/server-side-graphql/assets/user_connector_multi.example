@@ -1,0 +1,29 @@
+export const getUsers = async (filter?: string, offset = null, limit = null) => {
+  try {
+    const selectQuery = `
+      SELECT
+        id,
+        username,
+        email,
+        name,
+        phone,
+        guest,
+        created_date,
+        timezone
+      FROM users
+      GROUP BY id
+      ORDER BY name ASC LIMIT $limit OFFSET $offset`
+
+    const users = await DB.query(selectQuery, {
+      bind: {
+        offset,
+        limit,
+      },
+      type: DB.QueryTypes.SELECT,
+    })
+
+    return users
+  } catch (error) {
+    throw error
+  }
+}

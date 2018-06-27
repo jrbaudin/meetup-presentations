@@ -1,0 +1,25 @@
+import {
+  getUsers,
+  getUserWithId,
+  getUserSettings
+} from './database/connectors/user'
+
+import logger from '../util/logger'
+
+const resolveFunctions = {
+  Query: {
+    users(obj, { filter, offset, limit }, context, info) {
+      return getUsers(filter, offset, limit)
+    },
+    user(obj, { userId }, context, info) {
+      return getUserWithId(userId)
+    },
+  },
+  User: {
+    settings(user) {
+      return getUserSettings(user.id)
+    },
+  },
+}
+
+export default resolveFunctions
